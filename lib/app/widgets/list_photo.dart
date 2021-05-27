@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:practice_webant_gallery_app/app/ui/scenes/gallery/bloc/gallery_bloc.dart';
-import 'package:practice_webant_gallery_app/domain/entity/photo_entity.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:gallery_for_lena/app/ui/scenes/gallery/bloc/gallery_bloc.dart';
+import 'package:gallery_for_lena/domain/entity/photo_entity.dart';
 
 // ignore: must_be_immutable
 class ListPhoto extends StatelessWidget {

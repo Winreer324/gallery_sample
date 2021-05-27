@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:practice_webant_gallery_app/app/ui/scenes/gallery/bloc/gallery_bloc.dart';
-import 'package:practice_webant_gallery_app/app/widgets/list_photo.dart';
-import 'package:practice_webant_gallery_app/domain/gateway/photo_gateway.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:gallery_for_lena/app/widgets/list_photo.dart';
+
+import 'bloc/gallery_bloc.dart';
 
 class GalleryScreen extends StatefulWidget {
   const GalleryScreen({

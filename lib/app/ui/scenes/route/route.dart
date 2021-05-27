@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:practice_webant_gallery_app/app/ui/scenes/gallery/bloc/gallery_bloc.dart';
-import 'package:practice_webant_gallery_app/app/ui/scenes/gallery/gallery_screen.dart';
-import 'package:practice_webant_gallery_app/gateway/http/new_photo_gateway.dart';
-import 'package:practice_webant_gallery_app/gateway/http/popular_photo_gateway.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:gallery_for_lena/app/ui/scenes/gallery/bloc/gallery_bloc.dart';
+import 'package:gallery_for_lena/app/ui/scenes/gallery/gallery_screen.dart';
+import 'package:gallery_for_lena/domain/enum/type_photo.dart';
+import 'package:gallery_for_lena/gateway/http/http_photo_gateway.dart';
+
 import 'custom_bottom_navigation_bar.dart';
 
 class MainScreen extends StatefulWidget {
@@ -23,11 +24,11 @@ class _MainScreenState extends State<MainScreen> {
 
   final _listPages = [
     BlocProvider(
-      create: (_) => GalleryBloc(NewPhotoGateway())..add(GalleryFetch()),
+      create: (_) => GalleryBloc(HttpPhotoGateway(TypePhoto.NEW))..add(GalleryFetch()),
       child: GalleryScreen(),
     ),
     BlocProvider(
-      create: (_) => GalleryBloc(PopularPhotoGateway())..add(GalleryFetch()),
+      create: (_) => GalleryBloc(HttpPhotoGateway(TypePhoto.POPULAR))..add(GalleryFetch()),
       child: GalleryScreen(),
     ),
   ];

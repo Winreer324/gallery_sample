@@ -1,10 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:practice_webant_gallery_app/app/ui/scenes/route/route.dart';
-
-import 'app/ui/scenes/gallery/bloc/gallery_bloc.dart';
+import 'app/ui/scenes/route/route.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

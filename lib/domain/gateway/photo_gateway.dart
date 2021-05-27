@@ -1,6 +1,6 @@
 import 'dart:core';
 
-import 'package:practice_webant_gallery_app/domain/entity/photo_entity.dart';
+import 'package:gallery_for_lena/domain/entity/photo_entity.dart';
 
 abstract class PhotoGateway {
   int _page = 1;

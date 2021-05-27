@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:practice_webant_gallery_app/app/ui/scenes/route/route.dart';
+import 'package:gallery_for_lena/app/ui/scenes/route/route.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
   final int currentIndex;
